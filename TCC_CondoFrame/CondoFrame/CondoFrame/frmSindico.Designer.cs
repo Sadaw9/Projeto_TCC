@@ -39,6 +39,8 @@
             this.mskInicioMand = new System.Windows.Forms.MaskedTextBox();
             this.mskFimMand = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodSind
@@ -132,11 +134,22 @@
             this.maskedTextBox1.TabIndex = 4;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(342, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(448, 282);
+            this.dataGridView1.TabIndex = 6;
+            // 
             // frmSindico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 331);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.mskFimMand);
             this.Controls.Add(this.mskInicioMand);
@@ -150,6 +163,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSindico";
             this.Text = "Cadastro de Sindico";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +181,6 @@
         private System.Windows.Forms.MaskedTextBox mskInicioMand;
         private System.Windows.Forms.MaskedTextBox mskFimMand;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

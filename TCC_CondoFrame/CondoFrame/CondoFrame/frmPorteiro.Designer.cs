@@ -41,6 +41,8 @@
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.gridPorteiro = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPorteiro)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodPort
@@ -147,11 +149,22 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Código";
             // 
+            // gridPorteiro
+            // 
+            this.gridPorteiro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridPorteiro.Location = new System.Drawing.Point(299, 30);
+            this.gridPorteiro.Name = "gridPorteiro";
+            this.gridPorteiro.RowHeadersWidth = 51;
+            this.gridPorteiro.RowTemplate.Height = 24;
+            this.gridPorteiro.Size = new System.Drawing.Size(489, 357);
+            this.gridPorteiro.TabIndex = 12;
+            // 
             // frmPorteiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 399);
+            this.Controls.Add(this.gridPorteiro);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.maskedTextBox3);
@@ -167,6 +180,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPorteiro";
             this.Text = "Cadastro de Porteiro";
+            ((System.ComponentModel.ISupportInitialize)(this.gridPorteiro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +200,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView gridPorteiro;
     }
 }

@@ -45,6 +45,8 @@
             this.mskEntradaCond = new System.Windows.Forms.MaskedTextBox();
             this.mskSaidaCondo = new System.Windows.Forms.MaskedTextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
+            this.gridCondomino = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCondomino)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCPF
@@ -183,11 +185,22 @@
             this.txtStatus.Size = new System.Drawing.Size(188, 22);
             this.txtStatus.TabIndex = 15;
             // 
+            // gridCondomino
+            // 
+            this.gridCondomino.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCondomino.Location = new System.Drawing.Point(337, 33);
+            this.gridCondomino.Name = "gridCondomino";
+            this.gridCondomino.RowHeadersWidth = 51;
+            this.gridCondomino.RowTemplate.Height = 24;
+            this.gridCondomino.Size = new System.Drawing.Size(515, 423);
+            this.gridCondomino.TabIndex = 16;
+            // 
             // frmCondomino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 485);
+            this.Controls.Add(this.gridCondomino);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.mskSaidaCondo);
             this.Controls.Add(this.mskEntradaCond);
@@ -207,6 +220,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCondomino";
             this.Text = "Cadastro de Condômino";
+            ((System.ComponentModel.ISupportInitialize)(this.gridCondomino)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +244,6 @@
         private System.Windows.Forms.MaskedTextBox mskEntradaCond;
         private System.Windows.Forms.MaskedTextBox mskSaidaCondo;
         private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.DataGridView gridCondomino;
     }
 }
