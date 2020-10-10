@@ -11,7 +11,7 @@ namespace CondoFrame
 {
     class Conexao
     {
-        private static string connString = @"Provider=Microsoft.Ace.OLEDB.12.0;Data Source=BD_Cliente.accdb";
+        private static string connString = @"Provider=Microsoft.Ace.OLEDB.12.0;Data Source=BD_CondoFrame.accdb";
 
         private static OleDbConnection conn = null;
 
