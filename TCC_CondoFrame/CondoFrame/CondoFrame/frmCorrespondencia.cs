@@ -16,5 +16,10 @@ namespace CondoFrame
         {
             InitializeComponent();
         }
+
+        private void frmCorrespondencia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

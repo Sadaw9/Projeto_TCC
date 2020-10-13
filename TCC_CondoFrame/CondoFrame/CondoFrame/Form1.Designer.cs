@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarCondôminoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +41,7 @@
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.correspondênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reclamaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -49,7 +51,8 @@
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblData});
+            this.lblData,
+            this.lblHora});
             this.statusStrip1.Location = new System.Drawing.Point(0, 487);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1187, 26);
@@ -63,13 +66,21 @@
             this.lblData.Size = new System.Drawing.Size(41, 20);
             this.lblData.Text = "Data";
             // 
+            // lblHora
+            // 
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(42, 20);
+            this.lblHora.Text = "Hora";
+            this.lblHora.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
             this.cadernoDigitalToolStripMenuItem,
-            this.reclamaçõesToolStripMenuItem});
+            this.reclamaçõesToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1187, 28);
@@ -85,6 +96,7 @@
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // cadastrarCondôminoToolStripMenuItem
             // 
@@ -119,14 +131,14 @@
             // reservasToolStripMenuItem
             // 
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
-            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.reservasToolStripMenuItem.Text = "Reservas";
             this.reservasToolStripMenuItem.Click += new System.EventHandler(this.reservasToolStripMenuItem_Click);
             // 
             // correspondênciaToolStripMenuItem
             // 
             this.correspondênciaToolStripMenuItem.Name = "correspondênciaToolStripMenuItem";
-            this.correspondênciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.correspondênciaToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.correspondênciaToolStripMenuItem.Text = "Correspondência";
             this.correspondênciaToolStripMenuItem.Click += new System.EventHandler(this.correspondênciaToolStripMenuItem_Click);
             // 
@@ -136,6 +148,13 @@
             this.reclamaçõesToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.reclamaçõesToolStripMenuItem.Text = "Reclamações";
             this.reclamaçõesToolStripMenuItem.Click += new System.EventHandler(this.reclamaçõesToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // linkLabel1
             // 
@@ -185,6 +204,8 @@
         private System.Windows.Forms.ToolStripMenuItem correspondênciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reclamaçõesToolStripMenuItem;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel lblHora;
     }
 }
 

@@ -20,6 +20,7 @@ namespace CondoFrame
         private void Form1_Load(object sender, EventArgs e)
         {
             lblData.Text = DateTime.Today.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToLongTimeString();
 
             linkLabel1.Text = "Acesse o Gmail aqui";
             linkLabel1.Links.Add(0, 20, "https://myaccount.google.com/?utm_source=sign_in_no_continue");
@@ -64,6 +65,28 @@ namespace CondoFrame
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.Link.LinkData.ToString());
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult mensagem = MessageBox.Show("Deseja finalizar a aplicação?", "Encerrar", MessageBoxButtons.YesNo,
+                                                                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (mensagem == System.Windows.Forms.DialogResult.Yes)
+
+            {
+                this.Close();
+            }
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
